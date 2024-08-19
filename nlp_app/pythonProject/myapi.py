@@ -2,7 +2,7 @@ import nlpcloud
 from functools import reduce
 class API:
     def __init__(self):
-        self.client = nlpcloud.Client("distilbert-base-uncased-emotion", "a4974d66cd0a32da8e8a32299d23ddd035a12f15", gpu=False, lang="en")
+        self.client = nlpcloud.Client("distilbert-base-uncased-emotion", "your_api_key", gpu=False, lang="en")
 
     def sentiment_analysis(self,text):
         response = self.client.sentiment(text)
